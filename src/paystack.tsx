@@ -170,6 +170,7 @@ const Paystack: React.ForwardRefRenderFunction<React.ReactNode, PayStackProps> =
         <WebView
           style={[{ flex: 1 }]}
           source={{ html: Paystackcontent }}
+          javaScriptEnabled
           onMessage={(e) => {
             messageReceived(e.nativeEvent?.data);
           }}
